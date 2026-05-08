@@ -1,0 +1,471 @@
+---
+title: "Fate of Himalyan glaciers and us"
+subtitle: "Stories of hope from around the world"
+author: "A. Student"
+date: today
+format:
+  closeread-html:
+    remove-header-space: true
+    cr-section:
+      layout: overlay-center
+css: |
+  <style>
+  body { font-family: 'Segoe UI', system-ui, sans-serif; }
+  </style>
+---
+
+```{css}
+/*| echo: false */
+body,
+.cr-section,
+.cr-sidebar,
+main {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #1a1a2e;
+  background-color: #ffffff;
+}
+
+/* Narrative column must be transparent in overlay sections
+   so the sticky image shows through */
+.cr-section .narrative-col {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #1a1a2e;
+}
+h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; }
+
+/* Let overlay sticky containers be transparent so the image shows */
+.cr-section .sticky-col-stack {
+  background-color: transparent !important;
+}
+
+/* Full-screen sticky images for overlay sections */
+#cr-glacier-wide,
+#cr-polar,
+#cr-volume {
+  width: 100%;
+  height: 100%;
+}
+
+#cr-glacier-wide figure,
+#cr-polar figure,
+#cr-volume figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#cr-glacier-wide img,
+#cr-polar img,
+#cr-volume img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-credits {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #e0e0e0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+}
+
+#cr-glacier-wide video {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+}
+
+/* Hero title section */
+.hero-title {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('title.jpg') center/cover no-repeat;
+  color: #ffffff;
+  padding: 2rem;
+  margin-left: calc(-50vw + 50%);
+  overflow: hidden;
+}
+.hero-title::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(13, 27, 42, 0.35) 100%
+  );
+}
+.hero-title > * {
+  position: relative;
+  z-index: 1;
+}
+.hero-title .hero-heading {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.6);
+}
+.hero-title .hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 300;
+  max-width: 640px;
+  opacity: 0.9;
+  margin-top: 0.75rem;
+  line-height: 1.5;
+}
+.hero-title .hero-author {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.hero-title .scroll-hint {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  animation: bounce 2s infinite;
+  opacity: 0.7;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+```
+
+```{=html}
+<!-- ============================================================
+     TITLE
+     ============================================================ -->
+```
+
+::: hero-title
+[Fate of Himalyan Glaciers and Us]{.hero-heading}
+
+[A journey on what lies ahead for the glacier in Himalaya and how will it impact us?]{.hero-subtitle}
+
+[Ujjwal Nagar]{.hero-author}
+
+[↓]{.scroll-hint}
+:::
+
+```{=html}
+<!-- ============================================================
+     SECTION 1 — The Big Picture (full-bleed image, overlay-center)
+     ============================================================ -->
+```
+
+:::: {.cr-section layout="overlay-right" narrative-border-radius="6px" narrative-overlay-max-width="480px" }
+
+In the early twentieth century, glaciers covered vast stretches of our mountain ranges. They fed rivers, sustained agriculture, and anchored entire ecosystems. @cr-glacier-wide
+
+But decade by decade, the ice has retreated. What once seemed permanent is now visibly shrinking. @cr-glacier-wide
+
+The scale of loss is difficult to grasp from a single photograph. To understand it, we need to look at the numbers. @cr-glacier-wide
+
+::: {#cr-glacier-wide}
+```{=html}
+<div class="video-container">
+  <video autoplay playsinline>
+    <source src="images/13243_Asian_Glaciers.webm" type="video/webm">
+  </video>
+  <div class="video-credits">
+    NASA's Goddard Space Flight Center<br>
+    <strong>Producer:</strong> Katie Jepson (USRA)<br>
+    <strong>Writer:</strong> Carol Rasmussen (NASA/JPL CalTech)<br>
+    <strong>Animator:</strong> Bailee DesRocher (USRA)
+  </div>
+</div>
+```
+:::
+::::
+
+
+## Climate Change and Glaciers
+
+Climate change is causing glaciers to melt at an accelerating rate due to rising global temperatures. As atmospheric and surface temperatures increase, glaciers lose more ice through melting than they accumulate from annual snowfall, resulting in their rapid retreat and shrinkage. This process is particularly severe in mountain regions like the Himalayas, where glaciers are sensitive to even small temperature changes. The consequences are far-reaching: reduced glacier volume threatens freshwater supplies for billions of people who depend on glacial meltwater for drinking water, irrigation, and hydroelectric power. Additionally, glacier loss contributes to sea-level rise, alters regional precipitation patterns, and destabilizes mountain ecosystems that have evolved in harmony with these frozen landscapes.
+
+
+```{=html}
+<!-- ============================================================
+     SECTION 2 — Climate Change Temperature data
+     ============================================================ -->
+```
+
+:::: {.cr-section layout="sidebar-left" narrative-background-color-sidebar="#ffffff" narrative-text-color-sidebar="#1a1a2e" section-background-color="#ffffff"}
+Let's examine how global average temperature has shifted over the last several decades using a simple R analysis. @cr-temp-code
+
+We start by loading libraries and creating a small dataset of decadal temperature anomalies relative to the 1951–1980 baseline. @cr-temp-code
+
+The real action is in the plot — mapping year to anomaly and drawing a smooth trend through the points. @cr-temp-code
+
+Notice the sharp upward bend after 1980. That acceleration is the signature of modern climate change. @cr-temp-code
+
+
+::: {#cr-temp-code}
+```{r}
+#| eval: true
+#| fig-width: 14
+#| fig-height: 8
+#| echo: false
+#| warning: false
+#| message: false
+library(ggplot2)
+library(dplyr)
+library(tibble)
+
+temperature <- tibble(
+  decade = seq(1900, 2020, by = 10),
+  anomaly_c = c(-0.2, -0.15, -0.1, -0.05, 0.0,
+                0.02, 0.05, 0.18, 0.35, 0.55,
+                0.75, 0.95, 1.15)
+)
+
+ggplot(temperature, aes(decade, anomaly_c)) +
+  geom_point(size = 8, colour = "#e63946", alpha = 0.85) +
+  geom_line(colour = "#457b9d", linewidth = 1.2) +
+  geom_smooth(method = "loess", se = FALSE,
+              colour = "#1d3557", linetype = "dashed", linewidth = 1) +
+  labs(
+    title = "Global Temperature Anomaly by Decade",
+    subtitle = "Rising temperatures accelerating since 1980",
+    x = "Decade", 
+    y = "Temperature Anomaly (°C)",
+    caption = "Data: 1900–2020 decadal averages relative to 1951–1980 baseline"
+  ) +
+  theme_minimal(base_size = 18) +
+  theme(
+    plot.title = element_text(face = "bold", size = 28, margin = margin(b = 8)),
+    plot.subtitle = element_text(size = 20, color = "#555555", margin = margin(b = 16)),
+    plot.caption = element_text(size = 14, color = "#888888", margin = margin(t = 12)),
+    axis.title = element_text(size = 18, face = "bold", color = "#1a1a2e"),
+    axis.text = element_text(size = 16, color = "#333333"),
+    panel.grid.major = element_line(color = "#e0e0e0", linewidth = 0.3),
+    panel.grid.minor = element_blank(),
+    plot.background = element_rect(fill = "white", color = NA),
+    panel.background = element_rect(fill = "#f8f9fa", color = NA),
+    plot.margin = margin(20, 20, 20, 20)
+  )
+```
+:::
+::::
+
+```{=html}
+<!-- ============================================================
+     SECTION 3 — How many glaciers are there in India/Himalaya
+     ============================================================ -->
+```
+
+:::: {.cr-section layout="overlay-center" narrative-border-radius="6px" narrative-overlay-max-width="480px"}
+India is home to the Himalayas, which has a significant number of glaciers that serve as lifelines for the country. @cr-volume
+
+These glaciers are a lifeline to the vast number of people, living acroos the mountains, valleys and plains thorugh their vast network of rivers. [@cr-volume]{pan-to="18%, 15%" scale-by="2" }
+
+All the big rivers like Ganga, Yamuna Brahmaputra, orginates are fed and sustained by these glaciers. [@cr-volume]{pan-to="0%,-10%" scale-by="2" }
+
+
+::: {#cr-volume}
+![](images/glacier_volume_pop.jpg){width="100%" fig-alt="Glacier volume visualization"}
+:::
+
+::::
+
+```{=html}
+<!-- ============================================================
+     SECTION 4 — The Poem (overlay-center, line-block sticky)
+     ============================================================ -->
+```
+
+::: {.cr-section layout="sidebar" narrative-background-color-overlay="rgba(255,255,255,0.88)" narrative-text-color-overlay="#1a1a2e" narrative-border-radius="10px" narrative-overlay-max-width="520px" poem-font-family="Georgia, 'Times New Roman', serif" section-background-color="#ffffff"}
+Poetry has long been a way to reckon with loss. Here is a short verse about the glaciers. @cr-poem
+
+The opening couplet frames the landscape — **ancient** and **patience** anchor the tone. @cr-poem
+
+The middle lines turn from observation to elegy. @cr-poem
+
+And the closing line asks us to sit with what remains. @cr-poem
+
+| {#cr-poem .scale-to-fill}
+| The ice once held an [ancient]{#cr-ancient} weight,
+| carved by centuries of [patience]{#cr-patience}.
+|   Now the rivers run too fast,
+|   carrying memory downstream —
+| leaving only [silence]{#cr-silence} on the rock.
+:::
+
+```{=html}
+<!-- ============================================================
+     SECTION 4 — Global Glacier Extinction
+     ============================================================ -->
+```
+
+:::: {.cr-section layout="overlay-right" narrative-background-color-overlay="rgba(13,27,42,0.75)" narrative-text-color-overlay="#e0e1dd" narrative-border-radius="6px" narrative-overlay-max-width="400px" section-background-color="#1b2838"}
+Glacial retreat doesn't happen in isolation. It cascades through ecosystems, from alpine meadows to polar seas. @cr-polar
+
+Polar bears depend on sea ice for hunting. As ice platforms disappear earlier each spring, hunting seasons shorten and survival rates fall. @cr-polar
+
+The consequences ripple outward — through food webs, migration patterns, and Indigenous communities whose cultures are tied to the ice. @cr-polar
+
+@cr-polar
+
+
+::::
+
+```{=html}
+<!-- ============================================================
+     SECTION 5 — A Key Quote (sidebar-right, blockquote sticky)
+     ============================================================ -->
+```
+
+::::: {.cr-section layout="sidebar-right" narrative-background-color-sidebar="#ffffff" narrative-text-color-sidebar="#333" section-background-color="#ffffff"}
+Scientists have been sounding the alarm for decades. The words of glaciologists carry a particular weight — they have watched their subject of study vanish before their eyes.
+
+::: {focus-on="cr-quote"}
+Consider this reflection from the field. It captures the emotional dimension of what is, at its core, a measurement problem.
+
+When your data points are disappearing, the science becomes personal.
+:::
+
+@cr-quote
+
+@cr-quote
+
+::: {#cr-quote}
+> "A glacier is a library written in ice. Every year we lose another chapter — and we haven't finished reading."
+>
+> — Composite paraphrase of glaciologist reflections
+:::
+:::::
+
+```{=html}
+<!-- ============================================================
+     SECTION 6 — Interactive scroll animation (overlay-left, OJS)
+     ============================================================ -->
+```
+
+::::: {.cr-section layout="overlay-left" narrative-background-color-overlay="rgba(0,0,0,0.65)" narrative-text-color-overlay="#f0f0f0" narrative-border-radius="6px" narrative-overlay-max-width="400px" narrative-outer-margin="2rem" section-background-color="#0d1b2a"}
+Let's visualise ice loss as you scroll. The blue circle below represents a glacier. Watch it shrink.
+
+::: progress-block
+In 1900 the glacier was vast — a seemingly permanent fixture of the landscape. @cr-ice-viz
+
+By mid-century, the edges had begun to recede. Scientists started systematic measurements. @cr-ice-viz
+
+The 1980s brought undeniable acceleration. Satellite imagery confirmed what field researchers had feared. @cr-ice-viz
+
+Today, barely a remnant remains. The glacier that once filled a valley now clings to a ridgeline. @cr-ice-viz
+:::
+
+::: {#cr-ice-viz}
+```{ojs}
+//| echo: false
+{
+  const w = 400, h = 400;
+  const ctx = DOM.context2d(w, h);
+
+  // Shrinking radius as user scrolls
+  const maxR = 170;
+  const minR = 20;
+  const r = maxR - crProgressBlock * (maxR - minR);
+
+  // Background
+  ctx.fillStyle = "#0d1b2a";
+  ctx.fillRect(0, 0, w, h);
+
+  // Ice circle
+  ctx.beginPath();
+  ctx.arc(w / 2, h / 2, r, 0, 2 * Math.PI);
+  const blue = Math.round(200 + crProgressBlock * 55);
+  ctx.fillStyle = `rgba(${blue}, 230, 255, 0.6)`;
+  ctx.fill();
+  ctx.strokeStyle = "rgba(255,255,255,0.4)";
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // Label
+  const pct = Math.round((1 - crProgressBlock) * 100);
+  ctx.fillStyle = "#ffffff";
+  ctx.font = "bold 22px system-ui";
+  ctx.textAlign = "center";
+  ctx.fillText(`${pct}% remaining`, w / 2, h / 2 + 6);
+
+  return ctx.canvas;
+}
+```
+:::
+:::::
+
+```{=html}
+<!-- ============================================================
+     SECTION 7 — Scroll-state dashboard (sidebar-left, OJS)
+     ============================================================ -->
+```
+
+:::: {.cr-section layout="sidebar-left" narrative-background-color-sidebar="#ffffff" narrative-sidebar-width="1.2fr" section-background-color="#ffffff"}
+Finally, here is a live view of the scroll variables Closeread exposes to OJS — useful for debugging and building custom animations.
+
+Scroll through these triggers and watch the panel update in real time. @cr-dashboard
+
+Keep scrolling — notice how `crTriggerProgress` sweeps from 0 to 1 within each trigger. @cr-dashboard
+
+And `crDirection` flips if you scroll back up. Try it. @cr-dashboard
+
+::: {#cr-dashboard}
+```{ojs}
+//| echo: false
+html`<div style="
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #e0e0e0;
+  border-radius: 12px;
+  line-height: 2;
+">
+  <p style="font-size:1.3rem; font-weight:bold; color:#a8dadc; margin-bottom:1rem;">
+    Scroll State
+  </p>
+  <p><strong>Trigger Index:</strong> ${crTriggerIndex}</p>
+  <p><strong>Trigger Progress:</strong> ${crTriggerProgress.toFixed(3)}</p>
+  <p><strong>Direction:</strong> ${crDirection}</p>
+  <p><strong>Active Sticky:</strong> ${crActiveSticky}</p>
+</div>`
+```
+:::
+::::
+
+------------------------------------------------------------------------
+
+## What can we do?
+
+The science is unambiguous: glaciers are retreating, and the pace is accelerating. But the story is not yet finished. Reducing emissions, protecting watersheds, and supporting communities on the front lines of ice loss are concrete steps we can take.
+
+## References
+
+Nie, Y., Pritchard, H.D., Liu, Q. et al. Glacial change and hydrological implications in the Himalaya and Karakoram. Nat Rev Earth Environ 2, 91–106 (2021). https://doi.org/10.1038/s43017-020-00124-w
+
+This document was built with [Closeread](https://closeread.dev), a Quarto extension for scrollytelling. Every section above demonstrates a different combination of layouts, stickies, focus effects, and interactive elements.
+
+:::::::::::::::
