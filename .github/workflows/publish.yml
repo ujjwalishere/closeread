@@ -25,6 +25,13 @@ jobs:
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
 
+      - name: Install R packages for rendering
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            knitr
+            rmarkdown
+
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:
