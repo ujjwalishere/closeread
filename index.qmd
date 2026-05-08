@@ -49,7 +49,7 @@ But decade by decade, the ice has retreated. What once seemed permanent is now v
 ::: {#cr-glacier-wide}
 ```{=html}
 <div class="video-container">
-  <video autoplay muted playsinline preload="metadata" data-closeread-video="glacier">
+  <video controls autoplay loop playsinline preload="auto" data-closeread-video="glacier">
     <source src="images/13243_Asian_Glaciers.webm" type="video/webm">
   </video>
   <div class="video-credits cr-source-note">
@@ -228,12 +228,16 @@ The map below indicates hotspots where flood risk is growing. @cr-flood-risk
 :::: {.cr-section layout="sidebar-right" narrative-border-radius="6px" narrative-overlay-max-width="480px"}
 This map highlights where glacier loss is expected to be most severe. @cr-extinction
 
-Regions in warmer, lower-altitude zones face the highest extinction risk. @cr-extinction
+Regions in warmer, lower-altitude zones face the highest extinction risk. [@cr-extinction]{pan-to="15%, -20%" scale-by="0.5"}
 
-The pattern underscores how quickly some ice systems may disappear within a few decades. @cr-extinction
+As temperatures continue to rise, populations dependent on these fragile reservoirs will face unprecedented water stress during dry seasons. [@cr-extinction]{pan-to="20%, 0%" scale-by="1.2"}
+
+The pattern underscores how quickly some ice systems may disappear within a few decades. [@cr-extinction]{pan-to="-15%, 15%" scale-by="1.5"}
+
+Many small glaciers are already crossing tipping points, beyond which recovery is impossible even if emissions are drastically cut. [@cr-extinction]{pan-to="-5%, -5%" scale-by="1.8"}
 
 ::: {#cr-extinction}
-![](images/glacier_extinction.png){width="50%" fig-alt="Glacier extinction risk map"}
+![](images/glacier_extinction.png){width="100%" fig-alt="Glacier extinction risk map"}
 
 <span class="cr-source-note">Source: Van Tricht, L., Zekollari, H., Huss, M. et al. Peak glacier extinction in the mid-twenty-first century. Nat. Clim. Chang. 16, 143–147 (2026). https://doi.org/10.1038/s41558-025-02513-9</span>
 :::
