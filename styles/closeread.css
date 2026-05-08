@@ -1,0 +1,261 @@
+body,
+.cr-section,
+.cr-sidebar,
+main {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #1a1a2e;
+  background-color: #ffffff;
+}
+
+/* Narrative column must be transparent in overlay sections
+   so the sticky image shows through */
+.cr-section .narrative-col {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #1a1a2e;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Let overlay sticky containers be transparent so the image shows */
+.cr-section .sticky-col-stack {
+  background-color: transparent !important;
+  overflow: visible;
+}
+
+/* Full-screen sticky images for overlay sections */
+#cr-glacier-wide,
+#cr-polar,
+#cr-volume {
+  width: 100%;
+  height: 100%;
+}
+
+#cr-glacier-wide figure,
+#cr-polar figure,
+#cr-volume figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#cr-glacier-wide img,
+#cr-polar img,
+#cr-volume img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.video-credits {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #e0e0e0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+#cr-glacier-wide video {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+}
+
+/* Hero title section */
+.hero-title {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('../title.jpg') center/cover no-repeat;
+  color: #ffffff;
+  padding: 2rem;
+  margin-left: calc(-50vw + 50%);
+  overflow: hidden;
+}
+
+.hero-title::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(13, 27, 42, 0.35) 100%
+  );
+}
+
+.hero-title > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title .hero-heading {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.hero-title .hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 300;
+  max-width: 640px;
+  opacity: 0.9;
+  margin-top: 0.75rem;
+  line-height: 1.5;
+}
+
+.hero-title .hero-author {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.hero-title .scroll-hint {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  animation: bounce 2s infinite;
+  opacity: 0.7;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+/* Scroll dashboard (OJS) */
+.cr-dashboard {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #e0e0e0;
+  border-radius: 12px;
+  line-height: 2;
+}
+
+.cr-dashboard__title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #a8dadc;
+  margin-bottom: 1rem;
+}
+
+/* Dummy field note card */
+.cr-field-note {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f7ede2 0%, #f0efeb 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.cr-field-note__content {
+  max-width: 360px;
+  text-align: center;
+  color: #1a1a2e;
+}
+
+.cr-field-note__title {
+  margin-bottom: 0.5rem;
+}
+
+.cr-field-note__text {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Dummy metrics card */
+.cr-metrics {
+  background: #1b263b;
+  color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 12px;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.cr-metrics__title {
+  margin: 0 0 1rem 0;
+}
+
+.cr-metrics__grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+/* Dummy quote card */
+.cr-quote-card {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.cr-quote-card__text {
+  font-size: 2rem;
+  font-style: italic;
+  max-width: 520px;
+  color: #1a1a2e;
+  border-left: 6px solid #457b9d;
+  padding-left: 1.25rem;
+}
+
+.cr-source-note {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.4rem;
+}
+
+.video-credits.cr-source-note {
+  font-size: 0.7rem;
+  opacity: 0.75;
+}
+
+/* Fit media inside sticky panels with comfortable margins */
+.cr-fit-media {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: 86vh;
+  height: auto;
+  object-fit: contain;
+  margin: 0.75rem auto;
+}
